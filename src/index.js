@@ -18,7 +18,7 @@ app.get('/api/auth/discord/redirect', async (req, res) => {
         client_secret: process.env.ClientSecret,
         grant_type: 'authorization_code',
         code: code,
-        redirect_uri: "http://localhost:1500/api/auth/discord/redirect",
+        redirect_uri: "https://access.global-roleplay.xyz/api/auth/discord/redirect",
     });
 
     try {
