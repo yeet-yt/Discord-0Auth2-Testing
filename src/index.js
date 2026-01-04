@@ -56,11 +56,6 @@ app.get('/api/auth/discord/redirect', async (req, res) => {
                 value: `${userinfo.data.username}`
             },
             {                
-                name: "email",
-                variable: "{auth_email}",
-                value: userinfo.data.email
-            },
-            {                
                 name: "refresh_token",
                 variable: "{auth_refresh_token}",
                 value: output.data.refresh_token
